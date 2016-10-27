@@ -40,7 +40,7 @@
 // basemaps
          L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-           maxZoom: 10,
+           maxZoom: 11,
            minZoom: 10,
            id: 'mapbox.light',
            accessToken: 'pk.eyJ1IjoiY3VyZW1hbmdvIiwiYSI6ImNpcTQ4cGFwbDAxbmVmd25vZGNiOTVzeGEifQ.GWZByYkIft6eMRha69C8nw'
@@ -58,7 +58,7 @@
           function style_nb(feature){
               return {
                   fillColor: getColor_nb(feature.properties.Med_Income),
-                  weight: 0.1,
+                  weight: 0.5,
                   opacity: 1,
                   color: 'gray',
 
@@ -77,7 +77,7 @@
            function style_q(feature){
                return {
                    fillColor: getColor_q(feature.properties.Med_Income),
-                   weight: 0.1,
+                   weight: 0.5,
                    opacity: 1,
                    color: 'gray',
                    fillOpacity: 0.9
@@ -95,7 +95,7 @@
             function style_ei(feature){
                 return {
                     fillColor: getColor_ei(feature.properties.Med_Income),
-                    weight: 0.1,
+                    weight: 0.5,
                     opacity: 1,
                     color: 'gray',
                     fillOpacity: 0.9
